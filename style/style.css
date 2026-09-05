@@ -18,9 +18,9 @@ body {
 }
 
 .main {
-    width: min(750px, 90dvw);
+    width: clamp(750px, 80vw);
     height: clamp(150px, 35vh, 400px);
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,7 +53,7 @@ body {
     display: flex;
 
     span {
-        font-size: clamp(20px, 10vh, 80px);
+        font-size: clamp(20px, 8dvh, 80px);
         font-family: monospace;
         color: hsl(0, 0%, 15%);
 
@@ -67,13 +67,19 @@ body {
 .buttons {
     margin-top: auto;
     margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     button {
         cursor: pointer;
         border-radius: 10px;
         border: none;
         color: hsl(0, 0%, 90%);
-        padding: 10px 40px;
+        padding-top: clamp(5px, 7dvw, 10px);
+        padding-right: clamp(10px, 7dvw, 50px);
+        padding-bottom: clamp(5px, 7dvw, 10px);
+        padding-left: clamp(10px, 7dvw, 50px);
         text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.315);
         transition: background-color ease 0.5s;
     }
