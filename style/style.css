@@ -53,7 +53,7 @@ body {
     display: flex;
 
     span {
-        font-size: clamp(20px, 14vh, 80px);
+        font-size: clamp(20px, 10vh, 80px);
         font-family: monospace;
         color: hsl(0, 0%, 15%);
 
