@@ -18,8 +18,8 @@ body {
 }
 
 .main {
-    width: clamp(750px, 80vw);
-    height: clamp(150px, 35vh, 400px);
+    min-width: clamp(750px, 80vw);
+    min-height: clamp(120px, 30vh, 400px);
     padding: 10px;
     display: flex;
     flex-direction: column;
